@@ -24,10 +24,10 @@ pipeline {
 
     post {
         always {
-            sh 'echo "Pipeline complete."'
+            sh 'echo "Pipeline complete."';
         }
         failure {
             sh 'echo "Pipeline failed."'
         }
     }
-]]
+}
